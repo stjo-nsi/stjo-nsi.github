@@ -1,0 +1,144 @@
+﻿/*configuration du corps de la page*/
+body {
+    font-family: 'Century Gothic', Calibri, serif;
+    margin: 0;
+    padding: 0;
+    font-size:1em;
+}
+
+/*Configuration de la boite menu*/
+header {
+    width:100%;
+    height:50px;
+    background-color:red;
+    text-align:center;
+    color:white; 
+    font-size: 2em;
+}
+
+nav li{
+    list-style-type: none; /*Mettre les éléments du menu en ligne et enlever les puces - mises dans le code temporaire - devant les éléments de liste*/
+    float: left;
+}
+
+nav ul{
+    margin: 0px; /*Reset des marges de notre élément de liste*/
+    padding: 0px;
+}
+
+nav {
+    width: 100%; 
+    background-color: red; /*On étend l'élément nav et on lui donne une couleur de fond */
+    border-bottom: 5px solid #4C8;
+}
+
+nav a{
+    display: inline-block; /*mise en forme des éléments de lien, c’est-à-dire les éléments a */
+    text-decoration: none;
+    padding: 20px 30px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.table{
+    display: table; /*centrer le menu dans la page */
+    margin: 0 auto;
+}
+
+/* On sépare le titre du menu avec une fine ligne grise*/
+#menu{
+    border-top: 2px solid #729179;
+}
+
+/* Effet lors du survol des liens*/
+.menu-survol:hover{
+    border-top: 5px solid #4C8;
+    background-color: rgba(000, 112, 192, 0.15); /*appliquer une bordure en haut des éléments de menu ainsi qu’une couleur de fond en semi-transparence lors du survol de l’élément en question */
+}
+
+/*Comme la bordure déplace les éléments de menu de sa hauteur lors du survol, ajout d'une marge intérieure spécifique lors du survol
+des éléments de menu pour contrebalancer l’effet de la bordure. */
+nav li:hover a{
+        padding: 15px 30px 20px 30px; 
+}
+
+
+/*Configuration de la boite centre et de ses composants*/
+section {
+    height:550px;
+    width:auto;
+    overflow: auto;
+    padding-left:10px;
+    padding-right : 10px;
+    padding-top:20px;
+    background-color: #FFFAFA;
+    font-size:1.5em;
+    color:red;
+}
+
+#centre {
+    font-size:1.75em;
+    text-align:left;
+}
+
+/*Tableau des stats dans la boîte centre*/
+
+table { 
+    margin: auto;
+    border-collapse: collapse; /*pour obtenir des bordures simples*/
+    border:1px solid gray; 
+    width:50%; 
+}
+
+table th {
+    background-color:red;
+    border:1px solid gray; 
+    color: #FFF;
+    padding: 5px 5px;
+}
+
+table td{
+    border:1px solid gray;
+    padding: 5px 5px;
+}
+
+/*Configuration des balises de structuration*/
+h1 {
+    font-size:1.5em;
+    text-align: center;
+    color:white; 
+}
+h3 {
+    font-size:1.5em;
+    text-align: center;
+    color:red; 
+}
+h6 {
+    font-size:1px;
+    text-align: left;
+    color:white;     
+}
+p { 
+    text-align:justify;
+}
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cligno{
+list-style-image:URL(./photos/cligno.gif);
+
+}
+legend{
+background-color:red;
+color:white;
+}
+fieldset {
+border-color:red;
+margin : 10px 10px 10px 10px;
+padding: 20px 50px 20px 50px;
+}
